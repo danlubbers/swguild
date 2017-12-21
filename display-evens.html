@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/JavaScript" src="display-evens.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container" class="table-responsive">
+            <h1>Display Evens</h1>
+            <table border="0px" width="100%" >
+            <tr>
+                <form name="displayEvens" onsubmit="return validateItems();"
+                onreset="resetForm();" class="form-inline">
+                <td><div class="form-group">
+                        <label for="start">Starting Number</label>
+                        <input type="number" class="form-control" id="start">
+                    </div> </td>
+                    <br>
+                </tr>
+                    <td><div class="form-group">
+                        <label for="end">Ending Number</label>
+                        <input type="number" class="form-control" id="end">
+                    </div></td>
+                    <br>
+                    <tr>
+                    <td><div class="form-group">
+                            <label for="step">Step</label>
+                            <input type="number" class="form-control" id="step">
+                        </div>
+                        <br></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" id="submitButton" class="btn btn-default">Display Evens</button></td>
+                    </tr>
+            </form>
+        </table>
+        <table id="results" class="table table-striped" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Here are the even numbers between <span id="start"></span> and <span id="end"></span> by <span id="step"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Addition</td>
+                    <td><span id="addResult"></span></td>
+                </tr>
+                <tr>
+                    <td>Subtration (-)</td>
+                    <td><span id="subtractResult"></span></td>
+                </tr>
+                <tr>
+                    <td>Multiplication (*)</td>
+                    <td><span id="multiplyResult"></span></td>
+                </tr>
+                <tr>
+                    <td>Division (/)</td>
+                    <td><span id="divideResult"></span></td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+
+    </body>
+</html>
